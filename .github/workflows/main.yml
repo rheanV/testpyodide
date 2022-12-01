@@ -25,7 +25,6 @@ jobs:
       - name: Deploy
         run: |
           python simple-cors-http-server.py
-   
      
  
 
