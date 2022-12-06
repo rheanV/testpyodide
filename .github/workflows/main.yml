@@ -10,9 +10,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: Run a multi-line script
-      run: |
-        echo test the checkout action,
-        ls -a
+    - name: start python server
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+    - run: python simple-cors-http-server.py
  
 
